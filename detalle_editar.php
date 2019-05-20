@@ -70,8 +70,8 @@
                           <li>
                             <i class="fa fa-images  big-text icon-s"></i>
                             <label  class=" text-left">Registro fotografico</label>
-                            <img id="img_principal" alt="">
-                            <input class="form-control" type="file" class="form-control"  id="imagen"  accept="image/jpg,image/jpeg"  />
+                            <img id="img_principal" class="fotoNormal" alt=""></br>
+                            <input class="form-control imagenCarga" type="file" class="form-control"  name="file"  accept="image/jpg,image/jpeg" id="inputFoto" />
                           </li>
                         </ul>
                       </div>
@@ -104,6 +104,14 @@
                         </div>
                         <div class="col col-md-4">
                             <ul class="list">
+                                <li>
+                                    <label>Estado</label>
+                                    <select class="form-control" name="estado" id="estado">
+                                      <option value="Programada">Programada</option>
+                                      <option value="Pendiente">Pendiente</option>
+                                      <option value="Realizada">Realizada</option>
+                                    </select>
+                                </li>
                                 <li>
                                     <label>Lider visita</label>
                                      <input  class="form-control" type="text" name="lider_visita" id="lider_visita">

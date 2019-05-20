@@ -79,27 +79,22 @@
                     <div class="col col-md-4">
                       <ul class="list">
                             <li>
-                                <i class="fa fa-money icon-s"></i>
                                 <label>Nombre</label>
                                 <strong  id="nombreBatallon"></strong>
                             </li>
                             <li>
-                                <i class="fa fa-dollar icon-s"></i>
                                 <label>Fuerza</label>
                                 <strong  id="fuerza"></strong>
                             </li>
                             <li>
-                                <i class="fa fa-percent icon-s"></i>
                                 <label>Sede </label>
                                 <strong  id="sede" ></strong>
                             </li>
                             <li>
-                                <i class="fa fa-dollar icon-s"></i>
                                 <label>Departamento</label>
                                <strong  id="departamento"></strong>
                             </li>
                             <li>
-                                <i class="fa fa-dollar icon-s"></i>
                                 <label>Localización</label>
                                <strong  id="localizacion"></strong>
                             </li>
@@ -108,22 +103,22 @@
                     <div class="col col-md-4">
                         <ul class="list">
                             <li>
-                                <i class="fa fa-clock-o icon-s"></i>
+                                <label>Estado</label>
+                                <strong id="estado"></strong>
+                            </li>
+                            <li>
                                 <label>Lider visita</label>
                                 <strong id="lider_visita"></strong>
                             </li>
                             <li>
-                                <i class="fa fa-clock-o icon-s"></i>
                                 <label>Quien atiende</label>
                                 <strong id="quien_atiende"></strong>
                             </li>
                             <li>
-                                <i class="fa fa-hashtag icon-s"></i>
                                 <label>Fecha programada</label>
                                 <strong id="fecha_programada"></strong>
                             </li>
                             <li>
-                                <i class="fa fa-clock-o icon-s"></i>
                                 <label>Fecha visita</label>
                                 <strong id="fecha_visita"></strong>
                             </li>
@@ -132,24 +127,20 @@
                     <div class="col col-md-4">
                         <ul class="list">
                             <li>
-                                <i class="fa fa-info icon-s"></i>
                                 <label>Cantidad de personas</label>
                                 <strong id="cantidad_personas"></strong>
                             </li>
                             <li>
-                                <i class="fa fa-info icon-s"></i>
                                 <label>Seguros voluntarios</label>
                                 <strong id="seguros_voluntarios"></strong>
                             </li>
                             <li>
-                                <i class="fa fa-info icon-s"></i>
                                 <label>Seguros complementarios</label>
                                 <strong id="seguros_complementarios"></strong>
                             </li>
                         </ul>
                         <ul class="list">
                             <li>
-                                <i class="fa fa-users icon-s"></i>
                                 <label>Observaciones</label>
                                 <strong id="observaciones"></strong>
                             </li>

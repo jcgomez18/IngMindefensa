@@ -37,20 +37,14 @@ if(isset($_POST["act"])){
 				$modelo_batallon->response->msg = $res->msg;
 
 		break;
-		case 'cargarImagen':
-
-				var_dump("CTRL");
-				var_dump($_FILES);
-				var_dump($_POST['files']);
-				var_dump($_POST['data']);
-
-				$res = $modelo_batallon->cargarImagen($_FILES);
+		case 'editarBatallon':
+				$res = $modelo_batallon->editarBatallon($_POST["id"],$_POST["data"]);
 				$modelo_batallon->response->bool = true;
 				$modelo_batallon->response->msg = $res->msg;
 
 		break;
-		case 'editarBatallon':
-				$res = $modelo_batallon->editarBatallon($_POST["id"],$_POST["data"]);
+		case 'editarfotoBatallon':
+				$res = $modelo_batallon->editarfotoBatallon($_POST["id"],$_POST["ruta"]);
 				$modelo_batallon->response->bool = true;
 				$modelo_batallon->response->msg = $res->msg;
 

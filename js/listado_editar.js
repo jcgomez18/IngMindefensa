@@ -31,7 +31,7 @@ $(document).ready(function(){
 
       },
         "ajax": {
-          //"url": "../controladores/ctrl_batallon.php",
+        //  "url": "../controladores/ctrl_batallon.php",
           "url": "../mindefensa/controladores/ctrl_batallon.php",
           "type": "GET",
           "data": { "act": 'obtenerBatallones'},

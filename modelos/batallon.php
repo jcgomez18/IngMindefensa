@@ -101,16 +101,12 @@
         return $this->response;
       }
 
-  public function cargarImagen($files){
-    var_dump("HOLA");
-    var_dump($files);
 
-  }
   public function editarBatallon($id,$data){
     $object = json_decode(json_encode($data), FALSE);
-    $query='UPDATE  ingetech_batallones.batallones set localizacion ="'. $object[0]->value.'",lider_visita ="'.$object[1]->value.'",quien_atiende = "'.$object[2]->value.'",fecha_programada = "'.$object[3]->value.'",fecha_visita = "'.$object[4]->value.'",cantidad_personas ="'.$object[5]->value.'",seguros_voluntarios = "'.$object[6]->value.'",seguros_complementarios="'.$object[7]->value.'",observacion="'.$object[8]->value.'"  WHERE idbatallones = '. $id;
-
     //$query='UPDATE  batallones.batallones set localizacion ="'. $object[0]->value.'",lider_visita ="'.$object[1]->value.'",quien_atiende = "'.$object[2]->value.'",fecha_programada = "'.$object[3]->value.'",fecha_visita = "'.$object[4]->value.'",cantidad_personas ="'.$object[5]->value.'",seguros_voluntarios = "'.$object[6]->value.'",seguros_complementarios="'.$object[7]->value.'",observacion="'.$object[8]->value.'"  WHERE idbatallones = '. $id;
+
+    $query='UPDATE  ingetech_batallones.batallones set localizacion ="'. $object[0]->value.'",estado ="'.$object[1]->value.'",lider_visita ="'.$object[2]->value.'",quien_atiende = "'.$object[3]->value.'",fecha_programada = "'.$object[4]->value.'",fecha_visita = "'.$object[5]->value.'",cantidad_personas ="'.$object[6]->value.'",seguros_voluntarios = "'.$object[7]->value.'",seguros_complementarios="'.$object[8]->value.'",observacion="'.$object[9]->value.'"  WHERE idbatallones = '. $id;
 
    $resultado = $this->bd->hacer_consulta($query);
    //var_dump($resultado);
@@ -124,6 +120,22 @@
 
    }
 
+
+  }
+
+  public function editarfotoBatallon($id,$ruta){
+  //  $query='UPDATE  batallones.batallones set imagen_pri ="'. $ruta.'" WHERE idbatallones = '. $id;
+    $query='UPDATE  ingetech_batallones.batallones set imagen_pri ="'. $ruta.'" WHERE idbatallones = '. $id;
+    $resultado = $this->bd->hacer_consulta($query);
+    //var_dump($resultado);
+    if($resultado){
+      $this->response->bool = true;
+      $this->response->msg = "Se actualizo la foto del batallon correctamente";
+    }else{
+      $this->response->bool = false;
+      $this->response->msg = "Error en la consulta de edicion de foto P de batallon";
+
+    }
 
   }
 

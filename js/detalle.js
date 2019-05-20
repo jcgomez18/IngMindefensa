@@ -26,7 +26,9 @@ $(document).ready(function(){
       $('#cantidad_personas').text(result.msg["cantidad_personas"]);
       $('#seguros_voluntarios').text(result.msg["seguros_voluntarios"]);
       $('#observaciones').text(result.msg["observaciones"]);
-      $('#img_principal').attr("src", "img/"+result.msg["img_principal"]);
+      //$('#img_principal').attr("src", result.msg["img_principal"]);
+      $('#img_principal').attr("src", "./mindefensa/"+result.msg["img_principal"]);
+
       $('#lider_visita').text(result.msg["lider_visita"]);
       $('#quien_atiende').text(result.msg["quien_atiende"]);
       $('#seguros_complementarios').text(result.msg["seguros_complementarios"]);

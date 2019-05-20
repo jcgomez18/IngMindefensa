@@ -14,8 +14,8 @@ class ConexionBD
 //*********************************************************************
 	function ConexionBD()
 	{
-		//$this->nombre_bd="batallones";
-		$this->nombre_bd="ingetech_batallones";
+		$this->nombre_bd="batallones";
+		//$this->nombre_bd="ingetech_batallones";
 		$this->nombre_host="127.0.0.1";
 		$this->nombre_usu=$this->nombre_usu; //por defecto
 		$this->passwd_usu=$this->passwd_usu; //por defecto
@@ -26,10 +26,8 @@ class ConexionBD
 // Metodo que se encarga de establecer la conexion con la base de datos
 	function establecer_conexion()
 	{
-		//if (!($this->enlace=mysql_connect($this->nombre_host . ":" . $this->puerto,$this->nombre_usu,$this->passwd_usu)))
-		//if (!($this->enlace= new mysqli("127.0.0.1", "Julian", "2019", "batallones", 3306)))
-
-		if (!($this->enlace= new mysqli("163.182.175.102", "ingetech", "T[yAAEokb+^^", "ingetech_batallones", 3306)))
+	//	if (!($this->enlace= new mysqli("127.0.0.1", "Julian", "2019", "batallones", 3306)))
+		 if (!($this->enlace= new mysqli("163.182.175.102", "ingetech", "T[yAAEokb+^^", "ingetech_batallones", 3306)))
 		{
 			$this->enlace->set_charset("utf8");
 
